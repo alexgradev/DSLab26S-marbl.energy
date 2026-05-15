@@ -1,0 +1,37 @@
+{
+  "zone": "DK1",
+  "data_path": "data_new/DK1_masterset_enriched.csv",
+  "price_col": "price_eur_mwh",
+  "spike_pct": 95,
+  "fkm_k_normal": 2,
+  "fkm_m": 2.0,
+  "fkm_error": 0.005,
+  "fkm_maxiter": 1000,
+  "clf_params": {},
+  "reg_params": {},
+  "pca_variance_target": 0.875,
+  "min_cluster_size": 40,
+  "random_seed": 42,
+  "models_dir": "models/",
+  "results_dir": "results/",
+  "fold_definitions": [
+    [
+      "2023-01-01",
+      "2023-12-31",
+      "2024-01-01",
+      "2024-12-31"
+    ],
+    [
+      "2023-01-01",
+      "2024-12-31",
+      "2025-01-01",
+      "2025-12-31"
+    ],
+    [
+      "2023-01-01",
+      "2025-12-31",
+      "2026-01-01",
+      "2026-04-30"
+    ]
+  ]
+}
