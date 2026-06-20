@@ -1,3 +1,18 @@
+# ignore the secrets API key in inherited pipeline summary
+
+# ignore the model cache
+results/cache/
+
+# ignore everything in the data folder EXCEPT the 'processed' folder
+inherited_pipeline/summary/data/*
+!inherited_pipeline/summary/data/processed/
+
+# ignore the secrets API key in inherited pipeline summary
+inherited_pipeline/summary/config/secrets.env
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

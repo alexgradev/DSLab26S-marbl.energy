@@ -1,0 +1,50 @@
+# Core data
+numpy==2.4.6
+pandas==3.0.3
+scipy==1.17.1
+
+# ML
+scikit-learn==1.8.0
+xgboost==3.2.0
+scikit-fuzzy==0.5.0
+joblib==1.5.3
+
+# Data fetching / APIs
+entsoe-py==0.7.11
+cdsapi==0.7.7
+ecmwf-datastores-client==0.5.0
+requests  # pulled in transitively but good to pin explicitly
+
+# Parquet / IO
+fastparquet==2026.5.0
+pyarrow==24.0.0
+fsspec==2026.4.0
+
+# Plotting
+matplotlib==3.10.9
+altair==6.0.0
+pillow==12.2.0
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.63.0
+kiwisolver==1.5.0
+pyparsing==3.3.2
+
+# Date / time / calendar
+python-dateutil==2.9.0.post0
+holidays==0.97
+tzdata==2026.2
+cftime==1.6.5
+
+# Utilities
+gitpython==3.1.46
+beautifulsoup4==4.14.3
+click==8.3.1
+colorama==0.4.6
+attrs==26.1.0
+annotated-types==0.7.0
+packaging==26.2
+six==1.17.0
+certifi==2026.2.25
+charset-normalizer==3.4.6
+idna==3.11

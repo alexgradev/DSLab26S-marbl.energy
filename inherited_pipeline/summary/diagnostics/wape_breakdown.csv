@@ -1,0 +1,36 @@
+zone,segment,group,n_days,n_hours,share_pct,wape
+DK1,overall,All,162,3885,100.0,31.35
+ES,overall,All,160,3837,100.0,34.03
+NO2,overall,All,160,3837,100.0,23.66
+DK1,cluster,Cluster 1,30,720,18.5,24.28
+DK1,cluster,Cluster 2,5,119,3.1,38.52
+DK1,cluster,Cluster 3,21,504,13.0,31.72
+DK1,cluster,Cluster 4,53,1272,32.7,21.58
+DK1,cluster,Cluster 5,14,334,8.6,143.28
+DK1,cluster,Cluster 6,39,936,24.1,47.92
+ES,cluster,Cluster 1,17,408,10.6,93.62
+ES,cluster,Cluster 2,18,432,11.3,15.23
+ES,cluster,Cluster 3,125,2997,78.1,34.47
+NO2,cluster,Cluster 1,52,1248,32.5,32.32
+NO2,cluster,Cluster 2,18,430,11.2,77.65
+NO2,cluster,Cluster 3,81,1944,50.7,14.29
+NO2,cluster,Cluster 4,8,191,5.0,21.01
+NO2,cluster,Cluster 5,1,24,0.6,47.46
+DK1,season,Summer,75,1800,46.3,30.25
+DK1,season,Autumn,87,2085,53.7,32.22
+ES,season,Summer,73,1752,45.7,30.29
+ES,season,Autumn,87,2085,54.3,37.55
+NO2,season,Summer,73,1752,45.7,22.21
+NO2,season,Autumn,87,2085,54.3,24.89
+DK1,day_type,Weekday,116,2783,71.6,28.8
+DK1,day_type,Weekend,46,1102,28.4,40.26
+ES,day_type,Weekday,114,2735,71.3,28.09
+ES,day_type,Weekend,46,1102,28.7,54.79
+NO2,day_type,Weekday,114,2735,71.3,20.21
+NO2,day_type,Weekend,46,1102,28.7,34.85
+DK1,extreme,Normal days,153,3670,94.5,30.89
+DK1,extreme,Extreme days,9,215,5.5,35.24
+ES,extreme,Normal days,151,3622,94.4,34.83
+ES,extreme,Extreme days,9,215,5.6,23.86
+NO2,extreme,Normal days,151,3622,94.4,23.26
+NO2,extreme,Extreme days,9,215,5.6,27.62
