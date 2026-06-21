@@ -1,7 +1,8 @@
 # ignore the secrets API key in inherited pipeline summary
+secrest.yaml
 
-# ignore the model cache
-results/cache/
+# ignore the results and model cache
+results/
 
 # ignore everything in the data folder EXCEPT the 'processed' folder
 inherited_pipeline/summary/data/*
@@ -10,8 +11,8 @@ inherited_pipeline/summary/data/*
 # ignore the secrets API key in inherited pipeline summary
 inherited_pipeline/summary/config/secrets.env
 
-
-
+# ignore archive folder
+archive/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
