@@ -1,8 +1,14 @@
 # ignore the secrets API key in inherited pipeline summary
 secrest.yaml
 
-# ignore the results and model cache
-results/
+# ignore absolutely everything inside the results folder
+results/**
+
+# unignore all directories inside results
+!results/**/
+
+# Un-ignore the .gitkeep files
+!**/.gitkeep
 
 # ignore everything in the data folder EXCEPT the 'processed' folder
 inherited_pipeline/summary/data/*
