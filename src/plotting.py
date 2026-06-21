@@ -499,9 +499,9 @@ def plot_single_day_diagnostics(
     figs.append(fig3)
 
     # Feature table (diagnostic side-output)
-    print(f"\n=== All features for {_date.date()} ({zone_cfg.zone}) ===")
-    for col, val in _df_spike_clf.loc[_date, _clf_cols].items():
-        print(f"  {col:<28s} {val:.4f}")
+    # print(f"\n=== All features for {_date.date()} ({zone_cfg.zone}) ===")
+    # for col, val in _df_spike_clf.loc[_date, _clf_cols].items():
+    #     print(f"  {col:<28s} {val:.4f}")
 
     return figs
 

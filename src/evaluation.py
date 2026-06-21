@@ -415,16 +415,21 @@ def worst_best_days_wape(
     rename_map   = {"daily_mape": "MAPE%", "daily_wape": "WAPE%",
                     "actual_mean": "actual_mean_eur", "pred_mean": "pred_mean_eur"}
 
+    numeric_cols = ["daily_mape", "daily_wape", "actual_mean", "pred_mean"]
+    worst[numeric_cols] = worst[numeric_cols].round(2)
+    best[numeric_cols]  = best[numeric_cols].round(2)
+
     print(f"=== 10 worst predicted days for {zone_cfg.zone} (by WAPE) ===")
-    print(worst[display_cols].rename(columns=rename_map).round(2).to_string(index=False))
+    print(worst[display_cols].rename(columns=rename_map).to_string(index=False))
+    print("\n")
 
     print(f"=== 10 best predicted days for {zone_cfg.zone} (by WAPE) ===")
-    print(best[display_cols].rename(columns=rename_map).round(2).to_string(index=False))
+    print(best[display_cols].rename(columns=rename_map).to_string(index=False))
+    print("\n")
 
     print(f"=== Worst-day regime breakdown for {zone_cfg.zone} ===")
     print(worst["regime_name"].value_counts().to_string())
-
-
+    print("\n")
 
 def worst_best_days_mae(
     df_predictions: pd.DataFrame,
@@ -470,11 +475,18 @@ def worst_best_days_mae(
     rename_map   = {"daily_mae": "MAE", "daily_mape": "MAPE%", "daily_wape": "WAPE%",
                     "actual_mean": "actual_mean_eur", "pred_mean": "pred_mean_eur"}
 
+    numeric_cols = ["daily_mae", "daily_mape", "daily_wape", "actual_mean", "pred_mean"]
+    worst_mae[numeric_cols] = worst_mae[numeric_cols].round(2)
+    best_mae[numeric_cols]  = best_mae[numeric_cols].round(2)
+
     print(f"=== 10 worst predicted days for {zone_cfg.zone} (by MAE) ===")
-    print(worst_mae[display_cols].rename(columns=rename_map).round(2).to_string(index=False))
+    print(worst_mae[display_cols].rename(columns=rename_map).to_string(index=False))
+    print("\n")
 
-    print("=== 10 best predicted days for {zone_cfg.zone} (by MAE) ===")
-    print(best_mae[display_cols].rename(columns=rename_map).round(2).to_string(index=False))
+    print(f"=== 10 best predicted days for {zone_cfg.zone} (by MAE) ===")
+    print(best_mae[display_cols].rename(columns=rename_map).to_string(index=False))
+    print("\n")
 
-    print("=== Worst-day regime breakdown for {zone_cfg.zone} ===")
+    print(f"=== Worst-day regime breakdown for {zone_cfg.zone} ===")
     print(worst_mae["regime_name"].value_counts().to_string())
+    print("\n")
